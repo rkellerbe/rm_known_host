@@ -19,3 +19,9 @@ def create_parser():
                         action='store_true')
     parser.add_argument("hostname", help="Hostname to be removed")
     return parser
+
+def main():
+    from rm_known_host import backup
+
+    args = create_parser().parse_args()
+    

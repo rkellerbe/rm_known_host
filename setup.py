@@ -12,5 +12,11 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/rkellerbe/rm_known_host',
-    packages=find_packages('src')
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
+    entry_points={
+        'console_scripts': [
+            'rm_known_host=rm_known_host.cli:main',
+        ],
+    }
 )
