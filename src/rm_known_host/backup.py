@@ -9,4 +9,4 @@ backup_name = 'known_hosts.bak'
 infile = os.path.join(home_dir, ssh_location, file_name)
 outfile = os.path.join(home_dir, ssh_location, backup_name)
 
-copy (infile, outfile)
+copy(infile, outfile)
