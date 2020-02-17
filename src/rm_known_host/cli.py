@@ -50,10 +50,19 @@ def create_parser():
 
 
 def main():
-    # from rm_known_host import backup
+    import os
+    import rm_known_host.rm_host as rm_host
+    home_dir = os.environ['HOME']
+    ssh_location = '.ssh'
+    file_name = 'known_hosts'
+
+    fname = os.path.join(home_dir, ssh_location, file_name)
+    fdir = os.path.join(home_dir, ssh_location)
+
 
     args = create_parser().parse_args()
 
     print(f"Interactive Flag is: {args.interactive}")
     print(f"Backup Flag is: {args.backup}")
     print(f"The hostname is {args.hostname}")
+    rm_host.delete_line(args.hostname, fdir, fname)
