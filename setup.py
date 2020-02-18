@@ -14,6 +14,7 @@ setup(
     url='https://github.com/rkellerbe/rm_known_host',
     packages=find_packages('src'),
     package_dir={'': 'src'},
+    python_requires='>=3.6',
     entry_points={
         'console_scripts': [
             'rm_known_host=rm_known_host.cli:main',
