@@ -22,7 +22,7 @@ Removing 192.168.1.15 from known_hosts
 Removal with backup example
 ```
 $ rm_known_host.sh -b rtp1-pod6-gw1
-Backing up known_hosts to known_hosts.old
+Backing up known_hosts to known_hosts.bak
 Removing rtp1-pod7-gw1 from known_hosts
 ```
 
