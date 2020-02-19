@@ -8,6 +8,7 @@ autopep8 = "*"
 pylint = "*"
 
 [packages]
+rm-known-host = {editable = true,path = "."}
 
 [requires]
 python_version = "3.7"

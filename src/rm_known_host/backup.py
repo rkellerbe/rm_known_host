@@ -11,3 +11,4 @@ def backup_function():
     outfile = os.path.join(home_dir, ssh_location, backup_name)
 
     copy(infile, outfile)
+    print(f"Backup file {backup_name} created.")

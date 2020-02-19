@@ -74,8 +74,5 @@ def main():
         print(f"Verbose Flag is {args.verbose}")
         print(f"The hostname is {args.hostname}\n")
 
-    if args.backup:
-        backup.backup_function()
-    
 
-    delete_line(args.hostname, fname, args.interactive)
+    delete_line(args.hostname, fname, args.interactive, args.backup)
