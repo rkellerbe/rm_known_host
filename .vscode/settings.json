@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/home/cloud_user/.local/share/virtualenvs/rm_known_host-TpBu-Nyy/bin/python"
+    "python.pythonPath": "/home/cloud_user/.local/share/virtualenvs/rm_known_host-TpBu-Nyy/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true
 }

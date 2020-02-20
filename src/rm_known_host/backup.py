@@ -1,6 +1,7 @@
 import os
 from shutil import copy
 
+
 def backup_function():
     home_dir = os.environ['HOME']
     ssh_location = '.ssh'
